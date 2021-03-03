@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS</title>
+        <style>
+            .classA{    /*클래스*/
+                font-weight:bold;;
+            } 
+            #idA{       /*아이디*/
+                color:green;
+            }
+            span{       /*태그*/
+                color:blue;
+            }
+        </style>
+    </head>
+
+    <body style="color:black;">
+        <p>
+            <span id="idA" class="classA">apple</span> aaaa 
+            <span class="classA">apple</span> bbbb cccc 
+            <span >apple</span> dddd ee ffff
+        </p>
+
+        <input type="button" value="red" onclick="
+        document.querySelector('body').style.color='red';
+        document.querySelector('body').style.backgroundColor='white';
+        ">
+        <input type="button" value="blue" onclick="
+        document.querySelector('body').style.color='blue';
+        document.querySelector('body').style.backgroundColor='white';
+        ">            
+        <input type="text" onchange="alert('change')">
+        <script>
+            document.write('hello world');
+        </script>
+    </body>
+
+</html>

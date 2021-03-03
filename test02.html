@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <h3>1===1</h3>
+        <script>document.write(1===1);</script>
+
+        <h3>1===2</h3>
+        <script>document.write(1===2);</script>        
+
+        <h3>1&lt;2</h3>
+        <script>document.write(1<2);</script>                
+
+        <h3></h3>
+        <script>
+            if(true)
+                document.write("1<br>");
+            else
+                document.write("2<br>");
+        </script>
+
+        <input id="button01" type="button" value="red" onclick="        
+        var target = document.querySelector('body');
+        if(this.value ==='red')     //document.querySelector('#button01').value
+        {            
+            target.style.color='red';
+            this.value = 'blue';
+        }
+        else{
+            target.style.color='blue';
+            this.value = 'red';
+        }
+        ">
+
+    </body>
+
+</html>
