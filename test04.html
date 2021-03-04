@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+    <script>
+        function sum( a, b){  //함수
+            return a+b;
+        }
+        function setColor(self)  //함수 토글
+        {
+            var target = document.querySelector('body');
+            if(self.value ==='red') {            
+                target.style.color='red';
+                self.value = 'blue';
+            }
+            else{
+                target.style.color='blue';
+                self.value = 'red';
+            }            
+        } 
+
+    </script>
+</head>
+
+<body>
+    <ul>
+        <script>
+            var arr = [1,2,3];
+            for(var i in arr) 
+                document.write('<li>'+arr[i]+'</li>');
+        </script>    
+    </ul>
+
+    <input id="button01" type="button" value="red" onclick="
+        setColor(this);
+    ">
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    </style>
+    <script>
+        var Body = {        //객체
+            setColor:function (col)   {
+                document.querySelector('body').style.color = col;
+            } ,
+            setBgColor:function (col)   {
+                document.querySelector('body').style.backgroundColor = col;
+            }   
+        }
+    </script>
+</head>
+
+<body>
+    <ul>
+        <script>
+            var arr = [1,2,3];
+            for(var i in arr)
+                document.write('<li>'+arr[i]+'</li>');
+        </script>    
+    </ul>
+
+    <input id="button01" type="button" value="red" onclick="
+        Body.setColor('red');
+        ">
+    <input id="button02" type="button" value="blue" onclick="
+        Body.setColor('blue');
+        ">    
+
+    <script>        
+        var coworkers = {     //객체
+            "programmer":"aaa",     
+            "designer":"bbb"        
+        };        
+        document.write('<br>');
+        document.write(coworkers.programmer);
+        document.write('<br>');
+        document.write(coworkers["programmer"]);
+        document.write('<br>');
+        coworkers["artist"] = "ccc";    //프로퍼티
+
+        coworkers.ShowAll = function(){     //메소드
+            for( var i in this)
+                document.write(i + ',');
+        }
+        coworkers.ShowAll();
+
+    </script>
+
+</body>
+
+</html>
